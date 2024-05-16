@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="container">
+        <h1 style="color: black; text-align: center;">Portifólio Lucas Freitas Ribeiro</h1>
+        <br>
+    </header>
+
+    <!-- /* Aqui eu estou criando os botões que vão ser clicados e sofrerão uma ação*/ -->
+    <nav>
+        <div class="button-container">
+            <button class="button" onclick="showContent('sobreMim')">Sobre Mim</button>
+            <button class="button" onclick="showContent('formacao')">Formação</button>
+            <button class="button" onclick="showContent('portifolio')">Portifólio</button>
+            <button class="button" onclick="showContent('contato')">Contato</button>
+        </div>
+    </nav>
+
+    <!-- /* Nessa seção eu crio o conteúdo que será exibido ao ser clicado o botão determinado 
+            Nessa parte eu criei um código em JavaScript, chamado script.js, que vai ocultar e exibir os conteúdos somente quando eles forem clicados, não sendo necessário criar links externos para cada botão, foi uma maneira de fazer com que o programa não fique repetitivo e pesado.
+        */ -->
+    <div id="sobreMim-content" class="content">
+        <section class="principal">
+            <h1>Sobre Mim</h1>
+            <p>Sou Lucas Freitas Ribeiro, 26 anos, graduando em Bacharelado em Engenharia de Software pela Uninter. Sou um experiente profissional em Finanças, Administração e Departamento de Pessoal/Recursos Humanos. Além disso, tenho experiência de trabalho na República da Irlanda, onde realizei um intercâmbio de inglês por um período de 10 meses.</p>
+            <p>Meus atuais hobbies são ler, gosto muito de ler filosofia, história, literatura (como Shakespeare), teatro grego; aprender sobre mecânica de automóveis; jogar e passar um tempo com a família</p>
+        </section>
+        <article class="container wrapper">
+            <aside class="lucas_imagem">
+                <img src="lucas-freitas-ribeiro.jpg" class="lucas_imagem">
+                <div class="infos">
+                    <p><strong>Ocupação: </strong>Engenheiro de Software</p>
+                    <p><strong>Data de Nascimento: </strong>30/08/1997</p>
+                </div>
+            </aside>
+        </article>
+    </div>
+
+    <div id="formacao-content" class="content">
+        <h1>Formação</h1>
+        <p>Sou estudante de Bacharelado em Engenharia de Software, mas já fui estudante de Química pela UFRJ. Formei no ensino médio em Dezembro de  2015 e ingressei em Março de 2018 para a UFRJ - Universidade Federal do Rio de Janeiro.</p>
+        <p>Sou falante intermediário B2 de inglês, tendo realizado meu aprendizado do idioma através de um intercâmbio na Europa, onde permaneci 10 meses trabalhando e estudando, totalmente imerso no idioma e cultura.</p>
+    </div>
+    <div id="portifolio-content" class="content">
+        <p>Deixo aqui um pequeno portifólio online do GitHub. Tem pequenos projetos pontuais, mas que logo será mais alimentados com projetos que estão sendo desenvolvidos.</p>
+        <p>Meu foco é desenvolvimento BackEnd, portanto os projetos que serão encontrados nesse repositório será voltado para isso.</p>
+        
+        <a class="buttonPortifolio" href="https://github.com/LucasFreitasRibeiro" target="_blank"> <!-- /* usei o target para abrir o link do GitHub em outra página*/ -->
+            <img src="github-icon.png" alt="GitHub" class="button-icon">
+            GitHub
+        </a>
+    </div>
+
+    <div id="contato-content" class="content">
+        <h1>Formulário de Contato</h1>
+        <form action="" method="">
+            <table>
+                <tr>
+                    <th><label for="nome">Nome:</label></th>
+                    <td><input type="text" name="nome" id="nome"></td>
+                </tr>
+                <tr>
+                    <th><label for="email">E-mail:</label></th>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <th><label for="msg">Digite sua mensagem:</label></th>
+                    <td><textarea name="msg" rows="5" cols="40"></textarea></td>
+                    <td></td>
+                    <td><button>Enviar</button></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
